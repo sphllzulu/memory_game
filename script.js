@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function flipCard(card) {
         
-    //if the card already contains the classname 'overturned' or is a second card has already been flipped, then the function is terminated 
+    //if the card already contains the classname 'overturned' or is a second card, then the function is terminated 
     //when the card is clicked, it will have the classname 'overturned'
 
         if (card.classList.contains('overturned') || twin2) return;
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             twin2 = undefined;
 
             if (twins === 8) {
-                // the condition is true, an alert is displayed after half a second delay
+                //if the condition is true, an alert is displayed after half a second delay
                 setTimeout(() => alert('Congratulations! You won!'), 500);
             }
         } else {
